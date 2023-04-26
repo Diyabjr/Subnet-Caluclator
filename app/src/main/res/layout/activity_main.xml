@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/ip_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP Address"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/subnet_mask_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subnet Mask"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/networks_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/add_network_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Network" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate VLSM" />
+
+        <LinearLayout
+            android:id="@+id/networks_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/additional_ip_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional IP Address"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/additional_subnet_mask_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Subnet Mask"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/calculate_additional_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Subnet" />
+
+    </LinearLayout>
+
+</ScrollView>
